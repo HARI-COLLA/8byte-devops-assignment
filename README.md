@@ -1,0 +1,98 @@
+# 🚀 DevOps Intern Assignment – 8byte AI
+
+## 📌 Project Overview
+This project demonstrates an end-to-end DevOps workflow by deploying a containerized Node.js application on AWS using Infrastructure as Code (Terraform) and CI automation (GitHub Actions).
+The application is packaged using Docker, infrastructure is provisioned on AWS using Terraform, and a CI pipeline validates Docker builds on every code push. The final application is publicly accessible via an EC2 public IP.
+
+## 🧱 Technology Stack
+Cloud Provider: AWS
+Infrastructure as Code: Terraform
+Containerization: Docker
+CI/CD: GitHub Actions
+Application Framework: Node.js (Express)
+Operating System: Ubuntu 22.04
+Instance Type: t3.micro
+
+---
+
+## 🏗️ Architecture Overview
+**Workflow:**
+1. Code push to GitHub
+2. CI pipeline builds Docker image
+3. Infrastructure provisioned using Terraform
+4. Application deployed on EC2
+5. App accessed via public IP
+
+## 🗂️ Project Structure
+8byte-devops-assignment/
+│
+├── app.js
+├── package.json
+├── Dockerfile
+│
+├── terraform/
+│ ├── provider.tf
+│ ├── variables.tf
+│ ├── main.tf
+│ ├── outputs.tf
+│ └── terraform.tfvars
+│
+└── .github/
+└── workflows/
+└── ci.yml
+
+---
+
+## ⚙️ Run Application Locally
+
+npm install
+node app.js
+
+http://localhost:3000
+
+# 🐳 Docker Setup
+
+docker build -t 8byte-intern-app .
+docker run -p 3000:3000 8byte-intern-app
+
+# ☁️ Terraform Infrastructure Setup
+terraform init
+terraform plan
+terraform apply
+
+# 🚢 Deploy on EC2
+
+ssh -i devops-key.pem ubuntu@<EC2_PUBLIC_IP>
+git clone https://github.com/HARI-COLLA/8byte-devops-assignment.git
+cd 8byte-devops-assignment
+docker build -t 8byte-app .
+docker run -d -p 3000:3000 8byte-app
+
+# 🔁 CI/CD – GitHub Actions
+
+Triggered on push to main
+Builds Docker image automatically
+Ensures build validation
+
+# 🌐 Live Application
+http://18.61.157.240:3000
+
+## 📸 Screenshots
+
+The following screenshots demonstrate successful completion of the assignment tasks.
+
+### Terraform Apply Output
+<img width="1472" height="1014" alt="Screenshot 2026-02-07 205337" src="https://github.com/user-attachments/assets/da7c0554-d2de-436a-82ae-3885ea11c657" />
+
+
+### EC2 Instance Running
+![EC2 Running](screenshots/ec2-running.png)
+
+### Application Working in Browser
+![Application](screenshots/app-browser.png)
+
+### GitHub Actions CI Pipeline
+![GitHub Actions](screenshots/github-actions.png)
+
+👤 Author
+Mallangi Harinath Reddy
