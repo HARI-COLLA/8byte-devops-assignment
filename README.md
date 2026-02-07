@@ -69,17 +69,16 @@ docker build -t 8byte-intern-app .
 docker run -p 3000:3000 8byte-intern-app
 
 # ☁️ Terraform Infrastructure Setup
-terraform init
-terraform plan
-terraform apply
+- terraform init
+- terraform plan
+- terraform apply
 
 # 🚢 Deploy on EC2
-
-ssh -i devops-key.pem ubuntu@<EC2_PUBLIC_IP>
-git clone https://github.com/HARI-COLLA/8byte-devops-assignment.git
-cd 8byte-devops-assignment
-docker build -t 8byte-app .
-docker run -d -p 3000:3000 8byte-app
+- ssh -i devops-key.pem ubuntu@<EC2_PUBLIC_IP>
+- git clone https://github.com/HARI-COLLA/8byte-devops-assignment.git
+- cd 8byte-devops-assignment
+- docker build -t 8byte-app .
+- docker run -d -p 3000:3000 8byte-app
 
 # 🔁 CI/CD – GitHub Actions
 
