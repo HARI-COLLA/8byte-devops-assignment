@@ -80,6 +80,18 @@ Prerequisites
 2. terraform plan
 3. terraform apply
 
+-> Resources Provisioned
+
+- VPC
+- Public Subnet
+- Internet Gateway
+- Route Table and Route Table Association
+- Security Group (Ports 22 and 3000)
+- EC2 Instance (Ubuntu 22.04)
+- Docker installed automatically using Terraform user_data
+
+Terraform outputs the EC2 public IP after successful execution.
+
 # 🚢 Deploy on EC2
 - ssh -i devops-key.pem ubuntu@<EC2_PUBLIC_IP>
 - git clone https://github.com/HARI-COLLA/8byte-devops-assignment.git
