@@ -86,13 +86,16 @@ The following screenshots demonstrate successful completion of the assignment ta
 
 
 ### EC2 Instance Running
-![EC2 Running](screenshots/ec2-running.png)
+<img width="2848" height="1473" alt="Screenshot 2026-02-07 205520" src="https://github.com/user-attachments/assets/5d8fab04-195b-490c-8d5a-8ef2df05ecfc" />
+
 
 ### Application Working in Browser
-![Application](screenshots/app-browser.png)
+<img width="2595" height="1396" alt="Screenshot 2026-02-07 211959" src="https://github.com/user-attachments/assets/fa955093-1466-4127-bfe3-f8f2a0158036" />
+
 
 ### GitHub Actions CI Pipeline
-![GitHub Actions](screenshots/github-actions.png)
+<img width="2567" height="1286" alt="Screenshot 2026-02-07 212503" src="https://github.com/user-attachments/assets/173cde03-ef17-408a-8564-7c01247a8b06" />
+
 
 👤 Author
 Mallangi Harinath Reddy
