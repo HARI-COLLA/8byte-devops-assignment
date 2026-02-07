@@ -69,6 +69,13 @@ http://localhost:3000
 - docker run -p 3000:3000 8byte-intern-app
 
 # ☁️ Terraform Infrastructure Setup
+Prerequisites
+- AWS Account
+- IAM user with required permissions
+- AWS CLI configured
+- Terraform installed
+- EC2 Key Pair created
+  
 - terraform init
 - terraform plan
 - terraform apply
