@@ -76,9 +76,9 @@ Prerequisites
 - Terraform installed
 - EC2 Key Pair created
   
-- terraform init
-- terraform plan
-- terraform apply
+1. terraform init
+2. terraform plan
+3. terraform apply
 
 # 🚢 Deploy on EC2
 - ssh -i devops-key.pem ubuntu@<EC2_PUBLIC_IP>
