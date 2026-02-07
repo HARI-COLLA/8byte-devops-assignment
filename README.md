@@ -29,7 +29,7 @@ The application is packaged using Docker, infrastructure is provisioned on AWS u
 ---
 
 ## 📂 Project Structure
-```text
+<pre> ```
 8byte-devops-assignment/
 │
 ├── app.js
@@ -53,8 +53,8 @@ The application is packaged using Docker, infrastructure is provisioned on AWS u
 └── .github/
     └── workflows/
         └── ci.yml
+</pre>
 
-'''
 
 ## ⚙️ Run Application Locally
 
