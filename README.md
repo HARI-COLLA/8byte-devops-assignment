@@ -1,47 +1,59 @@
-# 🚀 DevOps Intern Assignment – 8byte AI
+# 🚀 DevOps Intern Technical Assignment – 8byte AI
 
 ## 📌 Project Overview
-This project demonstrates an end-to-end DevOps workflow by deploying a containerized Node.js application on AWS using Infrastructure as Code (Terraform) and CI automation (GitHub Actions).
+This project demonstrates an end-to-end DevOps workflow by deploying a containerized Node.js application on AWS using **Infrastructure as Code (Terraform)** and **CI automation (GitHub Actions)**.
+
 The application is packaged using Docker, infrastructure is provisioned on AWS using Terraform, and a CI pipeline validates Docker builds on every code push. The final application is publicly accessible via an EC2 public IP.
 
+---
+
 ## 🧱 Technology Stack
-Cloud Provider: AWS
-Infrastructure as Code: Terraform
-Containerization: Docker
-CI/CD: GitHub Actions
-Application Framework: Node.js (Express)
-Operating System: Ubuntu 22.04
-Instance Type: t3.micro
+- **Cloud Provider:** AWS  
+- **Infrastructure as Code:** Terraform  
+- **Containerization:** Docker  
+- **CI/CD:** GitHub Actions  
+- **Application Framework:** Node.js (Express)  
+- **Operating System:** Ubuntu 22.04  
+- **Instance Type:** t3.micro  
 
 ---
 
 ## 🏗️ Architecture Overview
 **Workflow:**
-1. Code push to GitHub
-2. CI pipeline builds Docker image
-3. Infrastructure provisioned using Terraform
-4. Application deployed on EC2
-5. App accessed via public IP
+1. Code push to GitHub  
+2. GitHub Actions CI pipeline builds Docker image  
+3. Infrastructure provisioned using Terraform  
+4. Application deployed on AWS EC2  
+5. Application accessed via public IP on port 3000  
 
-## 🗂️ Project Structure
+---
+
+## 📂 Project Structure
+```text
 8byte-devops-assignment/
 │
 ├── app.js
 ├── package.json
 ├── Dockerfile
+├── README.md
 │
 ├── terraform/
-│ ├── provider.tf
-│ ├── variables.tf
-│ ├── main.tf
-│ ├── outputs.tf
-│ └── terraform.tfvars
+│   ├── provider.tf
+│   ├── variables.tf
+│   ├── main.tf
+│   ├── outputs.tf
+│   └── terraform.tfvars
+│
+├── screenshots/
+│   ├── terraform-apply.png
+│   ├── ec2-running.png
+│   ├── app-browser.png
+│   └── github-actions.png
 │
 └── .github/
-└── workflows/
-└── ci.yml
+    └── workflows/
+        └── ci.yml
 
----
 
 ## ⚙️ Run Application Locally
 
